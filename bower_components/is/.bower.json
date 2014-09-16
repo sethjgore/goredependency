@@ -1,0 +1,32 @@
+{
+  "name": "is",
+  "homepage": "https://github.com/sethjgore/is",
+  "authors": [
+    "sethjgore <sethjgore@gmail.com>"
+  ],
+  "description": "@sethjgore_ basic helper",
+  "main": "_is.sass",
+  "keywords": [
+    "sass",
+    "is"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0f44dae319",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0f44dae31936a4c8d908818f39cb6c5d529be200"
+  },
+  "_source": "git@github.com:sethjgore/is.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:sethjgore/is.git",
+  "_direct": true
+}

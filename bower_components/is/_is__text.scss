@@ -1,0 +1,89 @@
+$font-sizes: (
+  giga 3rem,
+  mega 2.75rem,
+  kilo 2.3rem,
+  milli 1.4rem,
+  micro 1.2rem,
+  nano .8rem,
+);
+
+$font-weights: (
+  heavy 800,
+  bold 700,
+  semibold 600,
+  medium 500,
+  regular 400,
+  light 300,
+  thin 200
+);
+
+///////////////////
+//FONT-SIZE: REM
+///////////////////
+
+//explodes font-sizes
+@each $item in $font-sizes{
+  $name: nth($item, 1);
+  $value: nth($item, 2);
+
+  .is__text--size--#{$name}{
+    font-size: #{$value};
+  }
+}
+
+///////////////////
+//FONT-SIZE: VW
+//FONT-SIZE: VH
+///////////////////
+
+//explodes VW font-sizes
+@for $i from 1 through 20{
+  .is__text--size--#{$i}vw{
+    font-size: #{$i}vw
+  }
+  .is__text--size--#{$i}vh{
+    font-size: #{$i}vh
+  }
+}
+///////////////////
+//FONT-WEIGH:
+///////////////////
+
+//explodes font-weights
+@each $item in $font-weights{
+  $name: nth($item, 1);
+  $value: nth($item, 2);
+
+  .is__text--#{$name}{
+    font-weight: #{$value};
+  }
+}
+
+///////////////////
+//FONT-STYLE:
+///////////////////
+
+.is__text--oblique{
+  font-style: oblique;
+  font-style: italic;
+}
+
+///////////////////
+//TEXT-ALIGN:
+///////////////////
+
+.is__text--center{
+  text-align: center;
+}
+
+.is__text--left{
+  text-align: left;
+}
+
+.is__text--right{
+  text-align: right;
+}
+
+.is__text--uppercase{
+  text-transform: uppercase;
+}
